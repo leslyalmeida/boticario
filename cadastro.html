@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cadastro Boticario</title>
+		<link href="../../css/partials/style.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<center>
+			<div id="header"><img id="logo" src="../../imagens\oboticario.png"></div><br>
+			<h1>Cadastro de produtos</h1>
+			<h3>Preencha o formulário abaixo:</h3><br>
+			<form>
+				<div class="margin-top-10">Produto:</div>
+				<input class="std_textbox" placeholder="Insira o nome do produto" type="text">
+
+				<div class="margin-top-10">Referência:</div>
+				<input class="std_textbox" placeholder="Insira a referência do produto" type="text">
+
+				<div class="margin-top-10">Preço:</div>			
+				<input class="std_textbox" placeholder="Insira o preço do produto" type="number">
+
+				<div class="margin-top-10">Imagem do produto:</div>
+				<input class="std_textbox" type="file"><br>
+
+				<div style="width: 285px;" id="button_container">
+			         <div class="login-btn">
+			         	<div class="margin-top-10">
+				            <button name="login" onclick="alert('Produto cadastrado com sucesso!')" type="submit" id="login_submit" tabindex="3">
+				            Cadastrar produto
+				            </button>
+				        </div>
+				        <div class="margin-top-10">
+				        	<a href="listadeprodutos.html">Veja aqui a lista de produtos cadastrados</a>
+				        </div>
+			         </div>
+			    </div>
+			</form>
+			</div>
+		</center>
+	</body>
+</html>
